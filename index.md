@@ -22,4 +22,4 @@ GroceryApp does **not** use any analytics frameworks, advertising SDKs, or track
 GroceryApp does **not** integrate with any third-party services. The only external service used is Apple's iCloud/CloudKit, governed by [Apple's Privacy Policy](https://www.apple.com/privacy/).
 
 ## Contact
-If you have questions about this privacy policy, contact us at: bdkinsella@gmail.com
+If you have questions about this privacy policy, contact us at: KindersDevelopment@icloud.com
