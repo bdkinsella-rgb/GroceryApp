@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GroceryApp - Smart Grocery List for iPhone & iPad</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: #1d1d1f;
+            background: #fff;
+            line-height: 1.6;
+        }
+
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding: 80px 20px 60px;
+            background: linear-gradient(180deg, #f0f5ee 0%, #fff 100%);
+        }
+        .hero h1 {
+            font-size: 2.8em;
+            font-weight: 700;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+        .hero .tagline {
+            font-size: 1.3em;
+            color: #555;
+            max-width: 500px;
+            margin: 0 auto 32px;
+        }
+        .app-store-badge {
+            display: inline-block;
+            margin-top: 8px;
+        }
+        .app-store-badge img {
+            height: 54px;
+        }
+
+        /* Features */
+        .features {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        .features h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 40px;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+        }
+        @media (max-width: 600px) {
+            .feature-grid { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 2em; }
+        }
+        .feature {
+            padding: 24px;
+            border-radius: 16px;
+            background: #f9f9f9;
+        }
+        .feature .icon {
+            font-size: 2em;
+            margin-bottom: 12px;
+        }
+        .feature h3 {
+            font-size: 1.15em;
+            margin-bottom: 8px;
+        }
+        .feature p {
+            color: #555;
+            font-size: 0.95em;
+        }
+
+        /* How It Works */
+        .how-it-works {
+            background: #f5f5f7;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .how-it-works h2 {
+            font-size: 2em;
+            margin-bottom: 40px;
+        }
+        .steps {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .step {
+            flex: 1;
+            min-width: 200px;
+            max-width: 240px;
+        }
+        .step .number {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 50%;
+            background: #34c759;
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.1em;
+            margin-bottom: 12px;
+        }
+        .step h3 { margin-bottom: 6px; }
+        .step p { color: #555; font-size: 0.9em; }
+
+        /* Privacy */
+        .privacy-section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .privacy-section h2 {
+            font-size: 2em;
+            margin-bottom: 16px;
+        }
+        .privacy-section p {
+            color: #555;
+            max-width: 550px;
+            margin: 0 auto;
+            font-size: 1.05em;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid #e5e5e5;
+            color: #888;
+            font-size: 0.85em;
+        }
+        footer a { color: #555; }
+    </style>
+</head>
+<body>
+
+    <!-- Hero -->
+    <section class="hero">
+        <h1>GroceryApp</h1>
+        <p class="tagline">The simple, shared grocery list that keeps your household in sync.</p>
+        <!-- Replace # with your actual App Store link once the app is live -->
+        <!--
+        <a class="app-store-badge" href="#">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+        -->
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <h2>Everything you need, nothing you don't.</h2>
+        <div class="feature-grid">
+            <div class="feature">
+                <div class="icon">&#x1F6D2;</div>
+                <h3>Smart Inventory Tracking</h3>
+                <p>Track what you have and what you need. Set target quantities and get automatic restock alerts when items run low.</p>
+            </div>
+            <div class="feature">
+                <div class="icon">&#x1F465;</div>
+                <h3>Real-Time Collaboration</h3>
+                <p>Share your list with family or housemates. Everyone sees changes instantly. No accounts to create &mdash; just invite via iCloud.</p>
+            </div>
+            <div class="feature">
+                <div class="icon">&#x1F4F7;</div>
+                <h3>Photo Attachments</h3>
+                <p>Snap a photo of the exact brand or product you want. No more guessing at the store.</p>
+            </div>
+            <div class="feature">
+                <div class="icon">&#x1F4CA;</div>
+                <h3>Organize by Category</h3>
+                <p>Sort items by category &mdash; produce, dairy, meat, frozen, and more. Filter to see exactly what you need.</p>
+            </div>
+            <div class="feature">
+                <div class="icon">&#x2744;&#xFE0F;</div>
+                <h3>Freezer Tracking</h3>
+                <p>Mark items stored in the freezer so you always know what's frozen and what's in the fridge.</p>
+            </div>
+            <div class="feature">
+                <div class="icon">&#x1F4E4;</div>
+                <h3>CSV Export</h3>
+                <p>Export your full inventory to a spreadsheet for meal planning, budgeting, or just keeping records.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <h2>Get started in seconds.</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="number">1</div>
+                <h3>Add Items</h3>
+                <p>Type an item name and tap add. Set quantities, categories, and notes as needed.</p>
+            </div>
+            <div class="step">
+                <div class="number">2</div>
+                <h3>Share Your List</h3>
+                <p>Tap the collaborate button and invite anyone with an iCloud account.</p>
+            </div>
+            <div class="step">
+                <div class="number">3</div>
+                <h3>Stay in Sync</h3>
+                <p>Changes sync automatically across all devices. Everyone always has the latest list.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy -->
+    <section class="privacy-section">
+        <h2>Your data stays yours.</h2>
+        <p>GroceryApp stores everything in your personal iCloud account. No third-party servers, no analytics, no tracking. We never see your data.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            &copy; 2026 Kinders Development &nbsp;&middot;&nbsp;
+            <a href="privacy-policy.html">Privacy Policy</a> &nbsp;&middot;&nbsp;
+            <a href="support.html">Support</a> &nbsp;&middot;&nbsp;
+            <a href="mailto:KindersDevelopment@icloud.com">Contact</a>
+        </p>
+    </footer>
+
+</body>
+</html>
